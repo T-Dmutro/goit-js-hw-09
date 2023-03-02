@@ -1,6 +1,6 @@
 
-btnStart = document.querySelector('[data-start]');
-btnStop = document.querySelector('[data-stop]');
+const btnStart = document.querySelector('[data-start]');
+const btnStop = document.querySelector('[data-stop]');
 // console.log(btnStart, btnStop)
 let activStatus = false;
  btnStart.addEventListener("click", handBtnClickStart);
