@@ -59,7 +59,7 @@ function timerTime(){
   const deltaTime = selectedTime - currentTime;
   const time = convertMs(deltaTime);
   if (deltaTime < DURATION) {
-    clearInterval(elements.timeId);
+    clearInterval(refs.timeId);
   }
   startTimer(time);
 }
