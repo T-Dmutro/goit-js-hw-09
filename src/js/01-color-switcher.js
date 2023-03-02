@@ -17,7 +17,7 @@ function handBtnClickStart ( ){
     if (activStatus ){
         return
     }
-    let = timerId = setInterval(()=> {
+    let  timerId = setInterval(()=> {
         activStatus = true;
         document.body.style.background = getRandomHexColor() ;
         }, 1000);
