@@ -12,12 +12,12 @@ let activStatus = false;
 function getRandomHexColor() {
     return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
   }
-
+let timerId;
 function handBtnClickStart ( ){
     if (activStatus ){
         return
     }
-    let  timerId = setInterval(()=> {
+     timerId = setInterval(()=> {
         activStatus = true;
         document.body.style.background = getRandomHexColor() ;
         }, 1000);
